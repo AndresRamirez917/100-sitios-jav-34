@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    background: #000;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin: 2em 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1300px;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border:none;
+}
+
+.button-1 {
+    background: #000;
+    color: #fff;
+}
+
+.button-2 {
+    background: #fff;
+    color: #070707;
+}
+
+.button-3 {
+    background: #302f2f;
+    color: #fff;
+}
+
+.box {
+width: 400px;
+height: 400px;
+margin-left: 10px;
+}
+
+.box .button-2 {
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25em ;
+}
+
+.box h3 {
+    position: absolute;
+    margin-left: 5em;
+    margin-top: 9em;
+    color: #fff;
+    font-size: 30px;
+font-weight: lighter;
+
+}
+
+/* .main-row-2 .box-4 .button-2 { 
+    position: absolute !important;
+    margin-left: 40em;
+    color: blue;
+} */
+
+form .form-group {
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+form .form-control {
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+    background: #252525;
+}
+
+form .button-3 {
+    width: 100%;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.current {
+  color: #ea2bb2;
+}
+
+/* navbar */
+.navbar {
+    background: #000;
+    margin: 1em 0;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar ul {
+    float: right;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+
+
+/* showcase */
+#showcase {
+    background: url("/img/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   color: #fff;
+}
+
+#showcase h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+#showcase h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+#showcase button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+/* main */
+.main-row {
+    margin-top: 3em;
+    display: flex;
+
+}
+
+.main-row-2 {
+    margin-top: 1em;
+    display: flex;
+
+}
+
+.box-1 {
+    background: url("/img/food-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.box-2 {
+    background: url("/img/food-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.box-3 {
+    background: url("/img/food-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.box-4 {
+    background: url("/img/food-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 810px;
+    height: 400px;
+    margin-left: 10px;
+}
+
+.box-5 {
+    background: url("/img/food-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/* about */
+/* #about img {
+    float: left;
+    width: 40%;
+}
+
+#about p {
+    float: right;
+    width: 55%;
+    margin-left: 1em;
+    font-size: 1.2em;
+    color: #fff;
+} */
+
+#about img {
+    width: 40%;
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.about-row {
+    display: flex;
+    color: #fff;
+}
+
+.about-row-2 {
+    display: flex;
+}
+
+/* footer */
+#footer {
+    background: #000;
+    color: #fff;
+}
+
+#footer p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+/* contact */
+#contact form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* footer */
+#footer {
+    padding: 3em;
+    text-align: center;
+}
+
+
