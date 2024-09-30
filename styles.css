@@ -74,6 +74,11 @@ margin-left: 10px;
     margin-top: 15rem;
 }
 
+.botoncito:hover {
+    color: #ea2bb2;
+    background: #302f2fb8;
+}
+
 .box .button-2 {
   margin: 0 auto;
   text-align: center;
@@ -118,6 +123,13 @@ form .button-3 {
 .navbar ul li a:hover,
 .navbar ul li a.current {
   color: #ea2bb2;
+}
+
+::placeholder {
+    font-family: "Font Awesome 5 free";
+    font-weight: 600;
+    content: "\f007";
+    text-align: right;
 }
 
 /* navbar */
