@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="/mobile.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>EBRUNCH | Welcome</title>
 </head>
 <body>
@@ -59,7 +60,7 @@
         </div>
     </section>
 
-    <section id="api">
+    <!-- <section id="api">
         <div class="container">
             <h2>Madre</h2>
             <div class="api-flex flex">
@@ -68,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contact">
         <div class="container">
@@ -76,17 +77,17 @@
             <form action="">
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control">
+                    <input id="nombre" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Nombre</label>
-                    <input type="text" class="form-control">
+                    <label for="">Email</label>
+                    <input id="email" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Nombre</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
                 </div>
-                <button class="btn button-1">send</button>1
+                <button id="btn-validar" class="btn button-3">send</button>1
             </form>
         </div>
     </section>
