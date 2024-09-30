@@ -2,18 +2,18 @@ async function getData(){
     const result = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a');
     const images = await result.json();
     const imagesArr = images.meals.map(elemento => Object.entries(elemento))
-    const imagesArrSlice = imagesArr.slice(0, 2)
-    const arrTitles = ["Avocado Toast", "Pancakes", "Waffles"]
+    //const imagesArrSlice = imagesArr.slice(0, 2)
+    const arrTitles = ["Avocado Toast", "Pancakes", "Waffles", "Sweet Tartal", "Empanadas", "Tiramizuu"]
     console.log("madre")
     console.log(images)
     images.meals.forEach(element => {
-        //for(i = 0; i < imagesArrSlice.length; i++){
+        //for(i = 0; i < arrTitles.length; i++){
             if(element.idMeal == "52768" || element.idMeal == "52893" || element.idMeal == "53049"){
                 const img = document.createRange().createContextualFragment(`
                     
                     <div class="box">
                         <img src="${element.strMealThumb}">
-                        <button class="btn botoncito">${arrTitles[1]}</button>
+                        <button class="btn botoncito">${arrTitles[Math.floor(Math.random() * 6)]}</button>
                     </div>
                     
                     `)
@@ -70,10 +70,6 @@ const validar = (e) => {
          email.value = "";
          mensaje.value = "";
     return true;
-}
-
-const emailValido = email=> {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
 btn_validar.addEventListener("click", validar)
